@@ -13,8 +13,8 @@ Este projeto coleta os resultados de torneios de jogadores chineses de League of
 ### 1. Clonar o Repositório
 
 ```sh
-git clone <url_do_repositorio>
-cd <nome_do_repositorio>
+git clone git@github.com:Samborka/WebScraper-INE5454.git
+cd WebScraper-INE5454
 ```
 
 ### 2. Criar e ativar um Ambiente Virtual
