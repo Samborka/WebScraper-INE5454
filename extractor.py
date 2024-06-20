@@ -15,7 +15,6 @@ chrome_options.add_argument("--disable-extensions")
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 chrome_driver_path = os.path.join(script_dir, "chrome")
-print(chrome_driver_path)
 
 driver = webdriver.Chrome(options=chrome_options)
 url = "https://lol.fandom.com/wiki/Category:Chinese_Residents"
@@ -68,6 +67,7 @@ def fetch_player_results(href):
           player["results"].append(player_data)
 
       players_results.append(player)
+      return player
     except Exception as e:
       print(f"Error fetching player results: {e}")
       return None
